@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Lazy load the video when the navbar is ready
   const loadVideo = () => {
-    navbarVideo.src = "../../video/background_video.mp4";
+    navbarVideo.src = "./video/background_video.mp4";
     navbarVideo.style.display = "block";
     navbarVideo.play();
   };
