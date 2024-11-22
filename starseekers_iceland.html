@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&family=Noto+Sans:wght@400&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/png" href="./icon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./icon/favicon.svg" />
+    <link rel="shortcut icon" href="./icon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./icon/apple-touch-icon.png" />
+    <link rel="manifest" href="./icon/site.webmanifest" />
+
+    <link rel="stylesheet" href="./css/common.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/utility.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+    <link rel="stylesheet" href="./css/starseekers_spot.css" />
+    <link rel="stylesheet" href="./css/iceland.css" />
+
+    <title>日本 | 尋星者</title>
+  </head>
+
+  <body>
+    <div class="full-container">
+      <div class="navbar">
+        <div class="logo-container"></div>
+        <video id="navbar-video" muted loop playsinline></video>
+        <ul id="nav-list"></ul>
+      </div>
+    </div>
+
+    <div id="slideshow-area"></div>
+
+    <div class="full-container">
+      <div id="slideshow-area"></div>
+    </div>
+
+    <main class="star-seekers-main p-3">
+      <div class="full-container flex-center">
+        <div class="spot-title-container">
+          <h1 class="mb-3">冰島的魅力：星空之外的自然奇觀</h1>
+          <p>
+            冰島，被譽為「冰與火之地」，以其壯麗的自然景觀和獨特的地理特徵而聞名。除了璀璨的星空，冰島還擁有許多令人驚嘆的旅遊景點和活動，讓每位旅客都能感受到這片土地的獨特魅力。
+            首先，壯觀的瀑布是冰島的一大亮點。著名的黃金圈內有壯觀的古佛斯瀑布，其水流從高處奔騰而下，形成巨大水霧，若在陽光下，還能看到美麗的彩虹。而斯科加瀑布和塞爾雅蘭瀑布更是讓人驚嘆的自然奇觀。
+            接著，冰島的冰川也是不容錯過的景點。瓦特納冰川是歐洲最大的冰川，遊客可以參加冰川健行，親自體驗冰川的壯麗與神秘。另有藍冰洞，這些天然形成的冰洞內部閃爍著藍光，彷彿置身於夢幻的冰雪世界。
+            再者，冰島的地熱溫泉也是一個讓人放鬆身心的好去處。著名的藍湖以其富含礦物質的溫泉水而受到遊客的青睞，這裡不僅能享受溫暖的水域，還能欣賞到四周壯麗的火山景觀。
+            最後，若你對野生動物感興趣，冰島也是觀賞鯨魚和北極狐的絕佳地點。在夏季，遊客可以參加鯨魚觀賞之旅，目睹這些海洋巨獸的壯觀身姿。
+            無論是欣賞星空、探訪瀑布，還是享受溫泉，冰島都將為你帶來難忘的旅遊體驗。這片神秘而美麗的土地，值得每位冒險者前來探索！
+          </p>
+        </div>
+
+        <div class="content-container flex-center" id="spot-area"></div>
+
+        <section class="faq">
+          <div class="content-container flex-center">
+            <div class="faq-image-container">
+              <img src="./img/iceland/location/iceland_spot002.jpg" alt="" />
+              <div class="faq-text-box">
+                <h2>冰島極光 Q&A: 來冰島追極光前必懂小知識</h2>
+              </div>
+            </div>
+
+            <div class="spot-info-container mb-large">
+              <div id="faq-container"></div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <footer id="footer"></footer>
+
+    <script src="./js/components/logo.js"></script>
+    <script type="module" src="./js/components/navbar.js"></script>
+
+    <script type="module" src="./js/init_iceland_page.js"></script>
+    <script type="module" src="./js/components/spot_iceland.js"></script>
+
+    <script type="module" src="./js/components/faq.js"></script>
+
+    <script type="module" src="./js/components/footer.js"></script>
+    <script type="module" src="./js/components/sociallinks.js"></script>
+  </body>
+</html>

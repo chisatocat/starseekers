@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
-    <title>尋星者</title>
+    <link rel="stylesheet" href="./css/starseekers_spot.css" />
+
+    <title>日本 | 尋星者</title>
   </head>
 
   <body>
@@ -41,15 +43,33 @@
       </div>
     </div>
 
+    <div id="slideshow-area"></div>
+
     <div class="full-container">
-      <div id="hero"></div>
+      <div id="slideshow-area"></div>
     </div>
+
+    <main class="star-seekers-main p-3">
+      <div class="full-container flex-center">
+        <div class="spot-title-container">
+          <h1 class="mb-3">3個日本必去星空景點 | 一起去星空美麗的地方吧！</h1>
+          <p>
+            日本擁有許多令人驚艷的星空觀賞地點，讓人沉浸於浩瀚宇宙的魅力中。首先，阿智村因其清新的空氣和缺乏光害而被譽為「星星最閃亮的地方」，四季皆可欣賞到璀璨的星空。接著，石垣市是日本三大星級景點之一，以其能見度極高的星空而聞名，這裡總共可以見到84個星座，十分適合觀星愛好者。最後，立山黑部以其壯麗的自然景觀和高海拔位置，提供了優越的觀星環境，尤其是夜晚的星空彷彿觸手可及。這三個地方不僅能讓你享受到絕美的星空，更是與親友共享難忘回憶的絕佳選擇。一起踏上這段星空之旅，探索日本最美的夜空吧！
+          </p>
+        </div>
+
+        <div class="content-container flex-center" id="spot-area"></div>
+      </div>
+    </main>
 
     <footer id="footer"></footer>
 
     <script src="./js/components/logo.js"></script>
     <script type="module" src="./js/components/navbar.js"></script>
-    <script type="module" src="./js/components/hero.js"></script>
+
+    <script type="module" src="./js/init_japan_page.js"></script>
+    <script type="module" src="./js/components/spot_japan.js"></script>
+
     <script type="module" src="./js/components/footer.js"></script>
     <script type="module" src="./js/components/sociallinks.js"></script>
   </body>

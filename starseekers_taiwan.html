@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
-    <title>尋星者</title>
+    <link rel="stylesheet" href="./css/starseekers_spot.css" />
+
+    <title>台灣 | 尋星者</title>
   </head>
 
   <body>
@@ -41,15 +43,34 @@
       </div>
     </div>
 
+    <div id="slideshow-area"></div>
+
     <div class="full-container">
-      <div id="hero"></div>
+      <div id="slideshow-area"></div>
     </div>
+
+    <main class="star-seekers-main p-3">
+      <div class="full-container flex-center">
+        <div class="spot-title-container">
+          <h1 class="mb-3">觀星新手看這邊！特搜全台絕美觀星景點TOP3，來場星空下的浪漫約會吧！</h1>
+
+          <p>
+            滿天星空伴隨著壯麗的山景與海景，浪漫的景象好像只存在童話故事和電影場景裡，但其實台灣擁有的賞星景點一樣很夢幻，而且非常容易抵達。現在就跟這這篇文，搞不好銀河就在你身邊，只是你不知道！連觀星攻略都告訴你，今晚就來場星空下的約會吧！
+          </p>
+        </div>
+
+        <div class="content-container flex-center" id="spot-area"></div>
+      </div>
+    </main>
 
     <footer id="footer"></footer>
 
     <script src="./js/components/logo.js"></script>
     <script type="module" src="./js/components/navbar.js"></script>
-    <script type="module" src="./js/components/hero.js"></script>
+
+    <script type="module" src="./js/init_taiwan_page.js"></script>
+    <script type="module" src="./js/components/spot_taiwan.js"></script>
+
     <script type="module" src="./js/components/footer.js"></script>
     <script type="module" src="./js/components/sociallinks.js"></script>
   </body>

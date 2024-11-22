@@ -1,0 +1,97 @@
+@import url(./common.css);
+
+.logo-container {
+  width: 64px;
+  height: 64px;
+  position: relative;
+}
+
+.logo {
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  position: relative;
+  animation: float 3s ease-in-out infinite;
+}
+
+/*************/
+/* Animation */
+/*************/
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+/********/
+/* Hero */
+/********/
+
+#hero {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: calc(100vh - 80px); /** better get the correct value by using js**/
+  padding-top: 150px;
+}
+
+.hero-image-container {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.hero-image-container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: blur(1px);
+  transition: all 0.5s ease-in-out;
+  z-index: 5;
+}
+
+.hero-image-container:hover img {
+  filter: none;
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.hero-overlay {
+  position: absolute;
+  color: white;
+  opacity: 0;
+  right: 30px;
+  top: 30px;
+  padding: 10px 0;
+  font-size: 8rem;
+  text-orientation: upright;
+  writing-mode: vertical-rl;
+  transition: all 0.5s ease-in-out;
+  z-index: 6;
+  pointer-events: none;
+}
+
+.hero-image-container:hover .hero-overlay {
+  opacity: 0.7;
+}
+
+@media (max-width: 768px) {
+  #nav-list {
+    display: none;
+  }
+
+  .hero-overlay {
+    opacity: 0.2;
+    font-size: 4rem;
+  }
+
+  #hero {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+}

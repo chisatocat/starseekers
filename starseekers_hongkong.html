@@ -29,7 +29,9 @@
     <link rel="stylesheet" href="./css/navbar.css" />
     <link rel="stylesheet" href="./css/footer.css" />
 
-    <title>尋星者</title>
+    <link rel="stylesheet" href="./css/starseekers_spot.css" />
+
+    <title>香港 | 尋星者</title>
   </head>
 
   <body>
@@ -41,15 +43,34 @@
       </div>
     </div>
 
+    <div id="slideshow-area"></div>
+
     <div class="full-container">
-      <div id="hero"></div>
+      <div id="slideshow-area"></div>
     </div>
+
+    <main class="star-seekers-main p-3">
+      <div class="full-container flex-center">
+        <div class="spot-title-container">
+          <h1 class="mb-3">【觀星好去處】香港5大睇星熱點</h1>
+
+          <p>
+            香港的觀星熱潮有增無減，吸引攝影發燒友之外，不少朋友、情侶都喜歡上睇星。雖然香港光害嚴重，但只要找對地點，港島、九龍、新界一樣有許多觀星熱點，不論是否揸車人士都能到達。
+          </p>
+        </div>
+
+        <div class="content-container flex-center" id="spot-area"></div>
+      </div>
+    </main>
 
     <footer id="footer"></footer>
 
     <script src="./js/components/logo.js"></script>
     <script type="module" src="./js/components/navbar.js"></script>
-    <script type="module" src="./js/components/hero.js"></script>
+
+    <script type="module" src="./js/init_hongkong_page.js"></script>
+    <script type="module" src="./js/components/spot_hongkong.js"></script>
+
     <script type="module" src="./js/components/footer.js"></script>
     <script type="module" src="./js/components/sociallinks.js"></script>
   </body>

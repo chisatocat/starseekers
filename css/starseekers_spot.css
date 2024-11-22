@@ -1,0 +1,52 @@
+@import url(../css/common.css);
+
+:root {
+  --spot-container-width: 1000px;
+}
+
+.spot-container {
+  margin: 50px;
+}
+
+.spot-container h2 {
+  border-bottom: 1px solid white;
+  color: var(--text-color);
+  font-size: 2rem;
+  padding: 20px 0;
+}
+
+.spot-image-container,
+.spot-info-container,
+.spot-transport-container,
+.spot-title-container {
+  max-width: var(--spot-container-width);
+  height: 100%;
+  overflow: hidden;
+}
+
+.spot-image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.spot-info-container p {
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.spot-title-container p {
+  line-height: 1.8;
+  font-size: 1.2rem;
+}
+
+.spot-transport-container {
+  border: 1px solid var(--text-color);
+  padding: 20px;
+  line-height: 2;
+}
+
+.spot-title-container h1 {
+  text-align: center;
+  font-size: 2.5rem;
+}
