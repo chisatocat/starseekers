@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", () => {
     anchor.href = "./index.html";
 
     const img = document.createElement("img");
-    img.src = "/img/logo.png";
+    img.src = "./img/logo.png";
     img.alt = "Starseekers Logo";
 
     img.classList.add("logo");
